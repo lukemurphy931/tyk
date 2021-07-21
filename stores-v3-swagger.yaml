@@ -1,7 +1,7 @@
 swagger: '2.0'
 schemes:
   - https
-host: apigw.eu-preprod.doddle.tech
+host: proper-sad-gw.aws-euw2.cloud-ara.tyk.io
 basePath: /v3
 info:
   title: Stores
@@ -16,7 +16,7 @@ securityDefinitions:
   OAuth2:
     type: oauth2
     flow: application
-    tokenUrl: https://apigw.eu-preprod.doddle.tech/v1/oauth/token
+    tokenUrl: https://proper-sad-gw.aws-euw2.cloud-ara.tyk.io/v1/oauth/token
     scopes:
       stores:read: Grants read access
       admin: Grants read and write access to administrative information

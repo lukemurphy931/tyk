@@ -7,7 +7,7 @@ info:
   title: Stores
   version: v3
 externalDocs:
-  url: 'https://apigw.eu-preprod.doddle.tech'
+  url: 'https://proper-sad-gw.aws-euw2.cloud-ara.tyk.io'
 consumes:
   - application/json
 produces:

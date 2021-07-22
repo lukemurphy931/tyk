@@ -23,7 +23,7 @@ paths:
       description: |
         Get a store by external store Id
       parameters:
-      - description: Bearer Token from Authentication API
+        - description: Bearer Token from Authentication API
           in: header
           name: Authorization
           required: true

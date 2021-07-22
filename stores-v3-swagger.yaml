@@ -55,9 +55,7 @@ paths:
         - description: It is used to set specified media type.
           in: header
           name: Accept
-          type: string
-      security:    
-        - OAuth2: [stores:read]  
+          type: string 
       responses:
         '200':
           description: OK
@@ -91,9 +89,7 @@ paths:
         - description: It is used to set specified media type.
           in: header
           name: Accept
-          type: string
-      security:    
-        - OAuth2: [stores:read]     
+          type: string    
       responses:
         '200':
           description: OK

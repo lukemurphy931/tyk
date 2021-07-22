@@ -23,6 +23,11 @@ paths:
       description: |
         Get a store by external store Id
       parameters:
+      - description: Bearer Token from Authentication API (scope required: stores:read)
+          in: header
+          name: Authorization
+          required: true
+          type: string
         - description: The external store id
           in: path
           name: externalId
@@ -58,7 +63,7 @@ paths:
           description: OK
         '429':
           description: |
-            API rate limit exceeded. See http://developer.spotify.com/web-api/user-guide/#rate-limiting for details.
+            API rate limit exceeded.
   '/stores/company/{companyId}/feed':
     get:
       description: |
@@ -94,4 +99,4 @@ paths:
           description: OK
         '429':
           description: |
-            API rate limit exceeded. See http://developer.spotify.com/web-api/user-guide/#rate-limiting for details.
+            API rate limit exceeded.

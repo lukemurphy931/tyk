@@ -17,13 +17,13 @@ securityDefinitions:
     type: apiKey
     in: query
     name: api_key
-  authToken:
+  AuthToken:
     type: apiKey
     in: header
     name: Authorization
 security:
   - ApiKeyAuth: []
-  
+  - AuthToken: []
 paths:
   '/stores/externalId/{externalId}':
     get:

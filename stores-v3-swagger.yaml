@@ -13,13 +13,10 @@ consumes:
 produces:
   - application/json
 securityDefinitions:
-  OAuth2:
-    type: oauth2
-    flow: application
-    tokenUrl: https://proper-sad-gw.aws-euw2.cloud-ara.tyk.io/v1/oauth/token
-    scopes:
-      stores:read: Grants read access
-      admin: Grants read and write access to administrative information
+  ApiKeyAuth:
+    type: apiKey
+    in: query
+    name: api_key
 paths:
   '/stores/externalId/{externalId}':
     get:
